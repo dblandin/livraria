@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/graphql",
+      "methods": ["POST", "GET"],
+      "dest": "/api/index.js"
+    }
+  ],
+  "builds": [{ "src": "**/*.js", "use": "@now/node" }]
+}
