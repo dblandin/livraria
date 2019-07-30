@@ -1,4 +1,6 @@
 const { ApolloServer, gql } = require('apollo-server-micro')
+const { buildFederatedSchema } = require('@apollo/federation')
+
 
 const typeDefs = gql`
   type Query {
@@ -15,8 +17,7 @@ const resolvers = {
 }
 
 const server = new ApolloServer({
-  typeDefs,
-  resolvers,
+  schema: buildFederatedSchema([{ typeDefs, resolvers }]),
   introspection: true,
   playground: true
 })
