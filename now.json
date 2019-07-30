@@ -5,6 +5,11 @@
       "src": "/graphql",
       "methods": ["POST", "GET"],
       "dest": "/api/index.js"
+    },
+    {
+      "src": "/gateway",
+      "methods": ["POST", "GET"],
+      "dest": "/gateway/index.js"
     }
   ],
   "builds": [{ "src": "**/*.js", "use": "@now/node" }]
