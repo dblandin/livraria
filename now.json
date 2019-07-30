@@ -2,7 +2,7 @@
   "version": 2,
   "routes": [
     {
-      "src": "/til/graphql",
+      "src": "/til",
       "methods": ["POST", "GET"],
       "dest": "/til/index.js"
     },
