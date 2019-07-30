@@ -11,7 +11,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: (root, args, context) => {
-      return "Hello world! It's your boy, how far now unicodeveloper"
+      return "Hello world!"
     }
   }
 }
