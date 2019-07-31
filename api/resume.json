@@ -1,0 +1,45 @@
+{
+  "basics": {
+    "name": "Devon Blandin",
+    "label": "Software Engineer",
+    "picture": null
+    "email": "dblandin@gmail.com",
+    "phone": null
+    "website": "https://devon.fyi",
+    "summary": null,
+    "location": null,
+    "profiles": [{
+      "network": "Twitter",
+      "username": "dblandin",
+      "url": "http://twitter.com/dblandin"
+    }]
+  },
+  "work": [{
+    "company": "Artsy",
+    "position": "Senior Engineer",
+    "website": "https://artsy.net",
+    "startDate": "2019-10-15",
+    "endDate": null,
+    "summary": null,
+    "highlights": []
+  }],
+  "volunteer": [],
+  "education": [{
+    "institution": "DePaul University",
+    "area": "Interactive Media",
+    "studyType": "Bachelor",
+    "startDate": "2007-09-01",
+    "endDate": "2012-06-01",
+    "gpa": null,
+    "courses": []
+  }],
+  "awards": [],
+  "publications": [],
+  "skills": [],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [],
+  "references": []
+}
