@@ -17,10 +17,8 @@
       "dest": "/gateway/index.js"
     }
   ],
-  "build": {
-    "env": {
-      "GITHUB_API_TOKEN": "@github-api-token"
-    }
+  "env": {
+    "GITHUB_API_TOKEN": "@github-api-token"
   },
   "builds": [
     {
