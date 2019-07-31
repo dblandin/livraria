@@ -2,6 +2,8 @@ const { ApolloServer, gql } = require('apollo-server-micro')
 const { buildFederatedSchema } = require('@apollo/federation')
 const github = require('@octokit/graphql')
 
+const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN
+
 const typeDefs = gql`
   type Reference {
     name: String
@@ -135,7 +137,7 @@ async function fetchIssues() {
 
   const { repository } = await github(query, {
     headers: {
-      authorization: `token ${process.env.GITHUB_API_TOKEN}`
+      authorization: `token ${GITHUB_API_TOKEN}`
     }
   })
 

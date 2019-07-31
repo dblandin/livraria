@@ -17,5 +17,15 @@
       "dest": "/gateway/index.js"
     }
   ],
-  "builds": [{ "src": "**/*.js", "use": "@now/node" }]
+  "build": {
+    "env": {
+      "GITHUB_API_TOKEN": "@github-api-token"
+    }
+  },
+  "builds": [
+    {
+      "src": "**/*.js",
+      "use": "@now/node"
+    }
+  ]
 }
