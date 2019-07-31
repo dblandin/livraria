@@ -118,7 +118,7 @@ const typeDefs = gql`
   type Query {
     hello: String
     resume: Resume
-    TodayILearned: [TodayILearnedPost]
+    til: [TodayILearnedPost]
   }
 `
 
@@ -149,7 +149,7 @@ const resolvers = {
     hello: (root, args, context) => {
       return "Hello world!"
     },
-    TodayILearned: (root, args, context) => {
+    til: (root, args, context) => {
       return fetchIssues()
     },
     resume: (root, args, context) => {
