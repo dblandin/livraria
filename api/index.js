@@ -124,7 +124,7 @@ const typeDefs = gql`
 
 async function fetchIssues() {
   const query = `{
-    repository(owner:"dblandin", name:"til") {
+    repository(owner:"dblandin", name:"til-test") {
       issues(last:3) {
         edges {
           node {
